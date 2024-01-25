@@ -1,0 +1,40 @@
+body{
+    background-color: #323232;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand{
+    padding: 0px;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.content{
+    padding: 50px;
+}
+
+.pizza{
+    width: 190px;
+    border-radius: 10px;
+}
+
+.bebidas{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.rowfooter{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

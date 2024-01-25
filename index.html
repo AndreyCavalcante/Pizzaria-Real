@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzaria Real - Cardápio</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id="topo">
+        <header class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h1 id="nome">Pizzaria Real - Cardápio</h1></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Cardápio</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="#topo">Pizzas Tradicionais</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#especiais">Pizzas Especiais</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#acompanhamentos">Acompanhamentos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#bebidas">Bebidas</a>
+                        </li>
+                        
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main class="container-fluid">
+            <div class="content"></div>
+            <div id="tradicionais" class="row justify-content-center text-center">
+                <h4>Pizzas Tradicionais</h4>
+
+                <div class="col-lg-3"></div>
+
+                <div class="col-lg-6 justify-content-center text-center">
+                    <div class="card mb-3" style="max-width: 540px;  background-color: transparent; color: white;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="imgs/calabresa.webp" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Calabresa</h5>
+                                <p class="card-text">
+                                    Ingredientes: Queijo mussarela, calabresa, cebola, azeitona e orégano. 
+                                </p>
+                                <p class="card-text"><small >R$ 99,99</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 540px;  background-color: transparent; color: white;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="imgs/frango.webp" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Frango com Catupiry</h5>
+                                <p class="card-text">
+                                    Ingredientes:   Frango, catupiry, queijo mussarela, cebola, tomate, azeitona e orégano.
+                                </p>
+                                <p class="card-text"><small>R$ 99,99</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 540px; background-color: transparent; color: white;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="imgs/portuguesa.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Portuguesa</h5>
+                                <p class="card-text">
+                                    Ingredientes: Queijo mussarela, presunto, ovos, cebola, tomate, azeitona e orégano.
+                                </p>
+                                <p class="card-text"><small>R$ 99,99</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-3"></div>
+
+                <div id="especiais" class="content"></div>
+
+                <div class="row">
+                    <h4>Pizzas Especiais</h4>
+                    <div class="col-lg-3"></div>
+
+                    <div class="col-lg-6">
+                        <div class="card mb-3" style="max-width: 540px; background-color: transparent; color: white;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="imgs/moda.webp" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">A moda</h5>
+                                  <p class="card-text">
+                                    Ingredientes: Queijo mussarela, tomate, presunto, azeitona, pimentões, cebola e champignons.
+                                  </p>
+                                  <p class="card-text"><small> R$ 99,99</small></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px; background-color: transparent; color: white;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="imgs/frango cheddar.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Frango com Cheddar e bacon</h5>
+                                  <p class="card-text">
+                                    Ingredientes: Queijo mussarela, frango, cheddar, cebola, bacon e orégano.
+                                  </p>
+                                  <p class="card-text"><small>R$ 99,99</small></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px; background-color: transparent; color: white;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="imgs/banana.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Banana com canela</h5>
+                                  <p class="card-text">
+                                    Ingredientes: Queijo mussarela, banana, canela, açucar refinado e mel.
+                                  </p>
+                                  <p class="card-text"><small> R$ 99,99</small></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="acompanhamentos" class="content"></div>
+
+                <div class="row">
+                    <h4>Acompanhamentos</h4>
+                    <div class="col-lg-3"></div>
+
+                    <div class="col-lg-6">
+                        <div class="card mb-3" style="max-width: 540px; background-color: transparent; color: white;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="imgs/batata.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Batatas fritas</h5>
+                                  <p class="card-text">R$ 7,00</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="bebidas" class="content"></div>
+
+                <div class="row">
+                    <h4>Bebidas</h4>
+                    <div class="col-lg-3"></div>
+
+                    <div class="col-lg-6">
+                        <section class="bebidas">
+                            <ul>
+                                <li>Coca-cola 2L ...................R$ 10,00</li>
+                                <li>Guaraná 2L .....................R$ 10,00</li>
+                                <li>Fanta Laranja 2L................R$ 10,00</li>
+                                <li>Coca-cola lata..................R$ 4,00</li>
+                                <li>Guaraná lata ...................R$ 4,00</li>
+                                <li>Fanta Laranja lata .............R$ 4,00</li>
+                                <li>Suco jarra .....................RS 7,00</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </main>
+        <div class="content"></div>
+
+        <footer class="container-fluid">
+            <div class="row rowfooter">
+                <h6>Janeiro de 2024</h6>
+                <h6>© Rstaurante e pizzaria Real</h6>
+                <h6><a href="https://portfolioandreycavalcante.netlify.app/" target="blank">Andrey Lopes Cavalcante Mendes</a></h6>
+            </div>
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
