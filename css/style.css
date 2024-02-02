@@ -38,3 +38,16 @@ body{
     justify-content: center;
     text-align: center;
 }
+
+.nomecard{
+    color: #ffca2e;
+}
+
+#nome{
+    color: #ffca2e;
+}
+
+.titulos{
+    color: black;
+    background-color: #ffca2e;
+}
