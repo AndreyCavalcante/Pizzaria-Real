@@ -49,5 +49,10 @@ body{
 
 .titulos{
     color: black;
+    border-radius: 10px;
     background-color: #ffca2e;
+}
+
+.fotos{
+    width: 400;
 }
