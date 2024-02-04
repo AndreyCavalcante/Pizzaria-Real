@@ -56,3 +56,16 @@ body{
 .fotos{
     width: 400;
 }
+
+#link{
+    color: #ffca2e;
+    text-decoration: none;
+}
+
+#linkport{
+    color: #323232;
+}
+
+.preco{
+    color: #ffca2e;
+}
