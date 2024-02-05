@@ -21,7 +21,7 @@ body{
     border-radius: 10px;
 }
 
-.bebidas{
+.section{
     background-color: transparent;
     color: white;
     border: 3px solid white;
@@ -45,6 +45,7 @@ body{
 
 #nome{
     color: #ffca2e;
+    padding: 3px;
 }
 
 .titulos{
@@ -68,4 +69,8 @@ body{
 
 .preco{
     color: #ffca2e;
+}
+
+.sobre{
+    color: #323232;
 }
