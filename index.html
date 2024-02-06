@@ -36,6 +36,7 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#bebidas">Bebidas</a>
                         </li>
+                        <hr>
                         <li class="nav-item">
                           <a class="nav-link sobre" href="sobre_nos.html">Sobre nós</a>
                         </li>
@@ -381,31 +382,7 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $('.navbar-nav a').on('click', function(){
-              $('#navbarToggleBtn').click();
-            });
-          });
-
-          var hora = new Date().getHours();
-          var msg = document.getElementById("msg");
-
-          var mensagem = ""
-
-          if(hora >= 5 && hora <12){
-            mensagem = "Olá, Bom dia!"
-          }
-          else if(hora >= 12 && hora < 18){
-            mensagem = "Olá, Boa tarde"
-          }
-          else{
-            mensagem = "Olá, Boa noite"
-          }
-
-          msg.innerHTML = `<h1> ${mensagem} </h1>`
-
-        </script>
+        <script src="js/scriptindex.js"></script>
     </body>
 
 </html>
