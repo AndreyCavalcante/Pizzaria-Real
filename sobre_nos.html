@@ -22,8 +22,15 @@
         </header>
 
         <main class="container-fluid">
+          <div class="content"></div>
+
+          <div class="row text-center justify-content-center">
+            <div class="msg">
+              <h1 id="msg">Olá, Bom dia!</h1>
+            </div>
+          </div>
+
           <div class="row justify-content-center">
-            <div class="content"></div>
             <div class="col-lg-3"></div>
 
             <div class="col-lg-6">
@@ -66,12 +73,8 @@
 
             <div class="col-lg-6">
               <section class="section">
-                <h2>Horários</h2>
-                <ul>
-                  <li>Sexta-feira: 18:30 às 23:00</li>
-                  <li>Sábado: 18:30 às 23:00</li>
-                  <li>Domingo: 18:30 às 23:00</li>
-                </ul>
+                <h4>Sobre nós</h4>
+                <p></p>
               </section>
             </div>
 
@@ -85,18 +88,52 @@
 
             <div class="col-lg-6">
               <section class="section">
-                <h2>Sobre nós</h2>
-                <p></p>
+                <h2>Horários</h2>
+                <ul>
+                  <li>Sexta-feira: 18:30 às 23:00</li>
+                  <li>Sábado: 18:30 às 23:00</li>
+                  <li>Domingo: 18:30 às 23:00</li>
+                </ul>
               </section>
             </div>
 
             <div class="col-lg-3"></div>
           </div>
         </main>
+
+        <div class="content"></div>
+
+        <footer class="container-fluid">
+          <div class="row rowfooter">
+            <a href="https://maps.app.goo.gl/P4Z8dn6bdNqt4k659"><h6 id="link"><img src="imgs/maps.png" alt="" width="15px"> Nos Avalie! Clique aqui.</h6></a>
+            <a href="https://www.instagram.com/espacoreal_restaurantepizzaria/" target="blank">
+                <h6 id="link"><img src="imgs/instagramlogo.png" alt="instagram" style="width: 20px;"> © Rstaurante e pizzaria Real</h6>
+              </a>
+              <h6><a id="linkport" href="https://portfolioandreycavalcante.netlify.app/" target="blank">Andrey Lopes Cavalcante Mendes</a></h6>
+          </div>
+        </footer>
         
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script>
+          var hora = new Date().getHours();
+          var msg = document.getElementById("msg");
+
+          var mensagem = ""
+
+          if(hora >= 5 && hora < 12){
+            mensagem = "Olá, Bom dia!"
+          }
+          else if(hora >= 12 && hora < 18){
+            mensagem = "Olá, Boa tarde!"
+          }
+          else{
+            mensagem = "Olá, Boa noite!"
+          }
+
+          msg.innerHTML = `<h1> ${mensagem} </h1>`
+        </script>
     </body>
 </html>
