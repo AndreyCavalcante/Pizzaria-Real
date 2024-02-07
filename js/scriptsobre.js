@@ -18,11 +18,11 @@ msg.innerHTML = `<h1> ${mensagem} </h1>`
 
 
 document.addEventListener('DOMContentLoaded', function() {
-var lista = document.getElementById('lista');
-var itens = lista.getElementsByTagName('li');
+var listar = document.getElementById('listar');
+var itens = listar.getElementsByTagName('li');
 
-var list = document.getElementById('lista');
-var item = list.getElementsByTagName('li');
+var listap = document.getElementById('listap');
+var item = listap.getElementsByTagName('li');
 
 var dia = new Date().getDay();
 
