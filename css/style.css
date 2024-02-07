@@ -86,3 +86,12 @@ body{
 .listas{
     list-style-type: none;
 }
+
+.listasobre{
+    margin-right: 30px;
+}
+
+.secbeb{
+    justify-content: left;
+    text-align: left;
+}
