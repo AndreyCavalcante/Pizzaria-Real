@@ -39,3 +39,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+
+var msgp = document.getElementById("timeP");
+var msgr = document.getElementById("timeR");
+
+var hora = new Date().getHours();
+
+if (hora >= 11 && hora < 14){
+    msgr.innerHTML = "Aberto!";
+    msgr.style.color = "#ffca2e";
+} else{
+    msgr.innerHTML = "Fechado!";
+    msgr.style.color = "white";
+}
+
+if (hora >= 18.30 && hora < 23){
+    msgp.innerHTML = "Aberto!";
+    msgp.style.color = "#ffca2e";
+} else{
+    msgp.innerHTML = "Fechado!";
+    msgr.style.color = "white";
+}
