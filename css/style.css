@@ -96,3 +96,11 @@ body{
     justify-content: left;
     text-align: left;
 }
+
+.descrição{
+    color: whitesmoke;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 17px;
+}
