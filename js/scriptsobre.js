@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var dia = new Date().getDay();
 
-    if (dia == 0 || dia == 5 || dia == 6){
+    if (dia != 0){
         if (hora >= 11 && hora < 14){
             msgr.innerHTML = "Aberto!";
             msgr.style.color = "#ffca2e";
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    if (dia != 0){
+    if (dia == 0 || dia == 5 || dia == 6) {
         if (hora >= 18.30 && hora < 23){
             msgp.innerHTML = "Aberto!";
             msgp.style.color = "#ffca2e";
