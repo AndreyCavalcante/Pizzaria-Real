@@ -39,32 +39,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', function(){
+var msgp = document.getElementById("timeP");
+var msgr = document.getElementById("timeR");
 
-    var msgp = document.getElementById("timeP");
-    var msgr = document.getElementById("timeR");
+var hora = new Date().getHours();
 
-    var hora = new Date().getHours();
+var dia = new Date().getDay();
 
-    var dia = new Date().getDay();
-
-    if (dia != 0){
-        if (hora >= 11 && hora < 14){
-            msgr.innerHTML = "Aberto!";
-            msgr.style.color = "#ffca2e";
-        } else{
-            msgr.innerHTML = "Fechado!";
-            msgr.style.color = "white";
-        }
+if (dia != 0){
+    if (hora >= 11 && hora < 14){
+        msgr.innerHTML = "Aberto!";
+        msgr.style.color = "#ffca2e";
+    } else{
+        msgr.innerHTML = "Fechado!";
+        msgr.style.color = "white";
     }
+}
 
-    if (dia == 0 || dia == 5 || dia == 6) {
+/*
+if (dia == 0 || dia == 5 || dia == 6) {
+    if (hora >= 18.30 && hora < 23){
+        msgp.innerHTML = "Aberto!";
+        msgp.style.color = "#ffca2e";
+    } else{
+        msgp.innerHTML = "Fechado!";
+        msgr.style.color = "white";
+    }
+}
+*/
+
+switch(dia){
+    case 0:
         if (hora >= 18.30 && hora < 23){
             msgp.innerHTML = "Aberto!";
             msgp.style.color = "#ffca2e";
-        } else{
+        }else{
             msgp.innerHTML = "Fechado!";
             msgr.style.color = "white";
         }
-    }
-});
+    case 5:
+        if (hora >= 18.30 && hora < 23){
+            msgp.innerHTML = "Aberto!";
+            msgp.style.color = "#ffca2e";
+        }else{
+            msgp.innerHTML = "Fechado!";
+            msgr.style.color = "white";
+        }
+    case 6:
+        if (hora >= 18.30 && hora < 23){
+            msgp.innerHTML = "Aberto!";
+            msgp.style.color = "#ffca2e";
+        }else{
+            msgp.innerHTML = "Fechado!";
+            msgr.style.color = "white";
+        }
+}
