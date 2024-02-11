@@ -56,11 +56,12 @@ if (dia == 0 || dia == 5 || dia == 6){
     }
 }
 
-
-if (hora >= 18.30 && hora < 23){
-    msgp.innerHTML = "Aberto!";
-    msgp.style.color = "#ffca2e";
-} else{
-    msgp.innerHTML = "Fechado!";
-    msgr.style.color = "white";
+if (dia != 0){
+    if (hora >= 18.30 && hora < 23){
+        msgp.innerHTML = "Aberto!";
+        msgp.style.color = "#ffca2e";
+    } else{
+        msgp.innerHTML = "Fechado!";
+        msgr.style.color = "white";
+    }
 }
