@@ -43,6 +43,7 @@ var msgp = document.getElementById("timeP");
 var msgr = document.getElementById("timeR");
 
 var hora = new Date().getHours();
+var min = new Date().getMinutes();
 
 var dia = new Date().getDay();
 
@@ -56,41 +57,16 @@ if (dia != 0){
     }
 }
 
-/*
+
 if (dia == 0 || dia == 5 || dia == 6) {
-    if (hora >= 18.30 && hora < 23){
+    if ((hora >= 18) || (hora === 18 && min >= 30) && hora < 23){
         msgp.innerHTML = "Aberto!";
         msgp.style.color = "#ffca2e";
     } else{
         msgp.innerHTML = "Fechado!";
         msgr.style.color = "white";
     }
-}
-*/
-
-switch(dia){
-    case 0:
-        if (hora >= 18.30 && hora < 23){
-            msgp.innerHTML = "Aberto!";
-            msgp.style.color = "#ffca2e";
-        }else{
-            msgp.innerHTML = "Fechado!";
-            msgr.style.color = "white";
-        }
-    case 5:
-        if (hora >= 18.30 && hora < 23){
-            msgp.innerHTML = "Aberto!";
-            msgp.style.color = "#ffca2e";
-        }else{
-            msgp.innerHTML = "Fechado!";
-            msgr.style.color = "white";
-        }
-    case 6:
-        if (hora >= 18.30 && hora < 23){
-            msgp.innerHTML = "Aberto!";
-            msgp.style.color = "#ffca2e";
-        }else{
-            msgp.innerHTML = "Fechado!";
-            msgr.style.color = "white";
-        }
+}else {
+    msgp.innerHTML = "Fechado!";
+    msgp.style.color = "white";
 }
