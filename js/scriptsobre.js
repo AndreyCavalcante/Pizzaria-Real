@@ -1,3 +1,5 @@
+var dia = new Date().getDay();
+
 document.addEventListener('DOMContentLoaded', function() {
     var listar = document.getElementById('listar');
     var itens = listar.getElementsByTagName('li');
@@ -6,11 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var item = listap.getElementsByTagName('li');
 
 
-    var dia = new Date().getDay();
+    
 
     switch(dia){
         case 0: 
-            itens[6].style.color = '#ffca2e';
             item[2].style.color = '#ffca2e';
             break;
         case 1: 
@@ -45,13 +46,16 @@ var msgr = document.getElementById("timeR");
 
 var hora = new Date().getHours();
 
-if (hora >= 11 && hora < 14){
-    msgr.innerHTML = "Aberto!";
-    msgr.style.color = "#ffca2e";
-} else{
-    msgr.innerHTML = "Fechado!";
-    msgr.style.color = "white";
+if (dia == 0 || dia == 5 || dia == 6){
+    if (hora >= 11 && hora < 14){
+        msgr.innerHTML = "Aberto!";
+        msgr.style.color = "#ffca2e";
+    } else{
+        msgr.innerHTML = "Fechado!";
+        msgr.style.color = "white";
+    }
 }
+
 
 if (hora >= 18.30 && hora < 23){
     msgp.innerHTML = "Aberto!";
